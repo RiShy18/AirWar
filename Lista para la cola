@@ -1,0 +1,34 @@
+public class ListaEnlazada extends Nodo {
+    private Nodo head;
+    private int size;
+    
+    public void Lista(){
+        this.head=null;
+        this.size=0;
+    }
+    public boolean Vacia(){
+        return this.head==null;
+    }
+    public int size(){
+        return this.size;
+    }
+    public void insertionF(Object data){
+        Nodo newNodo= new Nodo(data);
+        newNodo.next=this.head;
+        this.head=newNodo;
+        this.size++;
+    }
+    
+    public void classicInsert(Object data){
+        Nodo newNodo= new Nodo(data);
+        this.Last().next = newNodo;  
+        }
+    
+    private Object Last(){
+        Object current = this.head;
+        while(current.next!=null){
+            current=current.next;
+        return current;
+        }
+    }
+}
