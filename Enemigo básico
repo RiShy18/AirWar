@@ -1,0 +1,33 @@
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
+public class EnemyTest {
+    private final int attack;
+    private final int life =3;
+    private x;
+    private y;
+
+    public EnemyTest() {
+        this.attack = 1;
+    }
+    
+    public int GetAttack(){
+        return this.attack;
+    }
+    public int GetLife(){
+        return this.life;
+    }
+    public void Hurt(){
+        this.GetLife()= this.GetLife()-1;
+       
+    }
+    public void Death(){
+        if (this.GetLife()==0){
+            /*this.destroy()*/
+        }
+    }
+    public void Damage(){
+        /*Usuario.GetLife()-1*/
+    }
+    
+}
