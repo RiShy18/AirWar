@@ -1,0 +1,21 @@
+public class Nodo {
+    private Object data;
+    public Nodo next;
+    
+    public Nodo(Object data){
+        this.next=null;
+        this.data=data;
+    }
+    public Object getData(){
+        return this.data;
+    }
+    public void SetData(Object Dato){
+        this.data=Dato;
+    }
+    public Nodo getNext(){
+        return this.next;
+    }
+    public void setNext(Nodo nodo){
+        this.next=nodo;
+    }
+}
